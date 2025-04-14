@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🌿 Crop Disease Predictor</title>
+</head>
+<body>
+  <h2>🌿 Upload a Plant Leaf Image</h2>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required>
+    <input type="submit" value="Predict">
+  </form>
+
+  {% if prediction %}
+    <h3>🩺 Predicted Disease: {{ prediction }}</h3>
+
+    {% if supplement %}
+      <h4>🧪 Supplement Recommendation</h4>
+      <p><strong>Supplement:</strong> {{ supplement.name }}</p>
+      <a href="{{ supplement.link }}" target="_blank">Buy Now</a>
+    {% endif %}
+
+    {% if info %}
+      <h4>📋 Disease Information</h4>
+      <p><strong>Description:</strong> {{ info.description }}</p>
+      <p><strong>Steps to Cure:</strong> {{ info.steps }}</p>
+    {% endif %}
+
+    {% if img_url %}
+      <img src="{{ img_url }}" width="400">
+    {% endif %}
+  {% endif %}
+</body>
+</html>
