@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
 from PIL import Image
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications import MobileNetV2
@@ -13,7 +14,7 @@ import gdown  # Only needed if using Google Drive for large CSVs
 app = Flask(__name__)
 
 # Model is directly in project folder
-model = load_model("shuffuled_model.h5", compile=False, custom_objects={'InputLayer': InputLayer})
+model = load_model("shuffuled_model.h5", compile=False, custom_objects={'InputLayer': tf.keras.layers.InputLayer})
 
 # Check & download large CSV from Google Drive if not exists
 if not os.path.exists("shuffled_file.csv"):
