@@ -13,7 +13,7 @@ import gdown  # Only needed if using Google Drive for large CSVs
 app = Flask(__name__)
 
 # Model is directly in project folder
-model = load_model("shuffuled_model.h5", compile=False)
+model = load_model("shuffuled_model.h5", compile=False, custom_objects={'InputLayer': InputLayer})
 
 # Check & download large CSV from Google Drive if not exists
 if not os.path.exists("shuffled_file.csv"):
