@@ -6,4 +6,5 @@ pandas
 scikit-learn
 gunicorn
 gdown
-tensorflow==2.13.0  # or your compatible version
+tensorflow==2.11.0
+
