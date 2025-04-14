@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: crop-disease-detector
+    name: agro.ai
     runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
