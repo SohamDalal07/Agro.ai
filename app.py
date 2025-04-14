@@ -12,6 +12,9 @@ import os
 import gdown  # Only needed if using Google Drive for large CSVs
 
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return "It works!"
 
 # Model is directly in project folder
 model = load_model("shuffuled_model.h5", compile=False, custom_objects={'InputLayer': tf.keras.layers.InputLayer})
