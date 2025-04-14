@@ -4,13 +4,6 @@
 This project is an AI-powered solution designed to identify crop diseases from leaf images, leveraging deep learning and machine learning models. 
 It also provides disease-specific supplement recommendations and treatment information, making it an end-to-end intelligent tool for farmers and agricultural experts.
 
-## 👥 Team Members
-- **Yatin Patil** – A201  
-- **Atharva Khairnar** – A220  
-- **Soumy Raghuvanshi** – A221  
-- **Soham Dalal** – A233
-
----
 
 ## 🧠 Project Objective
 
@@ -116,10 +109,6 @@ The interface displays:
 
 ---
 
-## 🙏 Acknowledgments
-
-Thanks to [Kaggle](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset) for providing the dataset and the agriculture community for inspiration.
-```
 
 ---
 
