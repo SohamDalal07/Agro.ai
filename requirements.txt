@@ -1,9 +1,9 @@
-flask
+streamlit
 pillow
 numpy
 pandas
 scikit-learn
-gunicorn
-gdown
 tensorflow==2.18.0
+gdown
+
 
